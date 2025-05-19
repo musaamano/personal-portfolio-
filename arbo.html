@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Amano Kereyu - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header h3 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin: 0.3rem 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .photo-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Musa Amano</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="C:\Users\HP\OneDrive\Desktop\1202 (3)(2)\Math calculation response_files\Musa Amano\musa.jpg" alt="Musa Amano Kereyu">
+        <h1>Musa Amano Kereyu</h1>
+        <h3>Front-End Developer</h3>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:musaamano820@gmail.com">musaamano820@gmail.com</a></p>
+            <p>Phone: 0937874835</p>
+            <p>GitHub: <a href="https://github.com/musaamano" target="_blank">github.com/musaamano</a></p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Musa Amano Kereyu, a 3rd-year Computer Science student at Haramaya University. As a passionate front-end developer, I specialize in creating user-friendly and visually appealing web interfaces. I am eager to apply my skills in real-world projects and continue growing as a developer.</p>
+    </section>
+
+    <!-- ✅ New Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="photo-grid">
+            <div class="photo-card">
+                <img src="C:\Users\HP\OneDrive\Desktop\1202 (3)(2)\Math calculation response_files\Musa Amano\photo_2025-02-17_22-30-59.jpg" alt="Photo 1">
+                <p> this place is Harar city the city of peace.</p>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\HP\OneDrive\Desktop\1202 (3)(2)\Math calculation response_files\Musa Amano\photo_2025-02-17_22-51-44.jpg" alt="Photo 2">
+                <p> jogol that found in the harar city this is the historical place</p>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\HP\OneDrive\Desktop\1202 (3)(2)\Math calculation response_files\Musa Amano\photo_2025-02-17_20-58-07.jpg" alt="Photo 3">
+                <p>profesor gebisa ejeta libray that is in Haramaya University this means Haramaya University is the source of entelectuals.</p>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\HP\OneDrive\Desktop\1202 (3)(2)\Math calculation response_files\Musa Amano\musa.jpg" alt="Photo 4">
+                <p>Collaborating with classmates on a responsive web design task.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Front-End Development</li>
+            <li>HTML, CSS, JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Computer Science</strong></p>
+        <p>Haramaya University</p>
+        <p>3rd Year (Undergraduate, Ongoing)</p>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>Afan Oromo</li>
+            <li>Amharic</li>
+            <li>English</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via:</p>
+        <p>Email: <a href="mailto:musaamano820@gmail.com">musaamano820@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/musaamano" target="_blank">github.com/musaamano</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Musa Amano Kereyu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
